@@ -1,0 +1,45 @@
+# === Private / Personal Data ===
+history.jsonl
+.DS_Store
+stats-cache.json
+*.log
+
+# Local settings
+.claude/
+settings.json
+
+# Session & runtime data
+session-env/
+shell-snapshots/
+paste-cache/
+file-history/
+debug/
+telemetry/
+usage-data/
+cache/
+plans/
+todos/
+transcripts/
+
+# IDE integration
+ide/
+
+# Plugins (contains install cache and local state)
+plugins/
+
+# Chrome native host (local binary)
+chrome/
+
+# Tasks (runtime state)
+tasks/
+
+# Projects (per-project private config)
+projects/
+
+# Statsig (feature flag cache)
+statsig/
+
+# Symlinked skills (external repos)
+skills/codex
+skills/vercel-react-best-practices
+skills/web-design-guidelines
