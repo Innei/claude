@@ -40,3 +40,17 @@
 - Update learnings to `~/.claude/LEARNINGS.md` for future reference
 - Format: `## [Date] - [Topic]` followed by bullet points of what was learned
 - Focus on: root cause, what went wrong, how to avoid it next time
+
+## Agent Auto-Dispatch (Cheatsheet)
+
+*Always use the appropriate agent for the task.*
+
+- After writing/modifying code → `code-reviewer`
+- User input / auth / API / sensitive data → `security-reviewer`
+- Complex/ambiguous work → `planner` → `architect` → implement
+- Build/type errors → `build-error-resolver`
+- New feature / bug fix / refactor → `tdd-guide`
+- Key user journeys changed → `e2e-runner`
+- After large refactors → `refactor-cleaner`
+- After structure/doc-impact changes → `doc-updater`
+- Run in parallel when independent; sequence when dependent
