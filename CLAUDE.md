@@ -33,13 +33,6 @@
 - Run lint (includes typecheck) after writing code, but don't build
 - Ask when uncertain, don't assume
 
-## Learning & Reflection (MANDATORY)
-
-- **MUST read `~/.claude/LEARNINGS.md` at the START of every task** — no exceptions
-- **MUST use `/learning-reflection` skill** when recording new learnings
-- **MUST record learnings immediately** after resolving errors or discovering non-obvious behavior — don't defer
-- Failure to check past learnings before starting work is a violation of these rules
-
 ## Agent Auto-Dispatch (Cheatsheet)
 
 *Always use the appropriate agent for the task.*
