@@ -53,7 +53,7 @@ After writing/modifying code, do NOT review code yourself. Instead, delegate to 
 
 1. Save diff to secure temp file:
 ```bash
-tmpfile=$(mktemp /tmp/codex-review-XXXXXX.patch) && chmod 600 "$tmpfile" && git diff > "$tmpfile"; if [ ! -s "$tmpfile" ]; then git diff HEAD~1 > "$tmpfile"; fi; if [ ! -s "$tmpfile" ]; then rm -f "$tmpfile" && echo "[NO CHANGES]"; else echo "[DIFF_SAVED] $tmpfile"; fi
+tmpfile=$(mktemp /tmp/codex-review-XXXXXX) && chmod 600 "$tmpfile" && git diff > "$tmpfile"; if [ ! -s "$tmpfile" ]; then git diff HEAD~1 > "$tmpfile"; fi; if [ ! -s "$tmpfile" ]; then rm -f "$tmpfile" && echo "[NO CHANGES]"; else echo "[DIFF_SAVED] $tmpfile"; fi
 ```
 If `[NO CHANGES]`, stop — nothing to review.
 
