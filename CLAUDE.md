@@ -31,6 +31,7 @@
 - For renames or bulk changes, search globally to confirm impact scope first
 - Use `ast-grep` (sg) for code search and refactoring when possible
 - Run lint (includes typecheck) after writing code, but don't build
+- **Only lint/typecheck/format the files you modified** — never run these tools on the entire project. Scope checks to changed files only
 - Ask when uncertain, don't assume
 
 ## Agent Auto-Dispatch (Cheatsheet)
