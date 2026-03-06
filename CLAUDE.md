@@ -19,8 +19,8 @@
 
 - Never read or access .env files
 
-## Code Style
 
+## Code Style
 - Follow existing project patterns, import styles, and directory structure
 - Max 500 lines per file; React components under 300 lines
 - No useless comments — don't comment obvious code (e.g., variable declarations)
@@ -50,23 +50,11 @@
 
 ## Code Review via Codex
 
-After writing/modifying code, do NOT review code yourself. Instead, delegate to Codex CLI:
+After writing/modifying code, do NOT review code yourself. Instead, call `mcp__codex__codex` (model: `gpt-5.4`, sandbox: `read-only`, config: `{model_reasoning_effort: "xhigh"}`) to review the current git diff. If MCP fails, fallback to manual review.
 
-1. Save diff to secure temp file:
-```bash
-tmpfile=$(mktemp /tmp/codex-review-XXXXXX) && chmod 600 "$tmpfile" && git diff > "$tmpfile"; if [ ! -s "$tmpfile" ]; then git diff HEAD~1 > "$tmpfile"; fi; if [ ! -s "$tmpfile" ]; then rm -f "$tmpfile" && echo "[NO CHANGES]"; else echo "[DIFF_SAVED] $tmpfile"; fi
-```
-If `[NO CHANGES]`, stop — nothing to review.
+## Output Style
 
-2. Run Codex (use unquoted heredoc so `$tmpfile` expands):
-```bash
-codex exec --skip-git-repo-check -m gpt-5.3-codex --config model_reasoning_effort="xhigh" --sandbox read-only --full-auto 2>/tmp/codex-review-err.log <<CODEX_PROMPT
-Review the git diff for quality, security, and maintainability. Check for: hardcoded credentials, injection risks, XSS, missing validation, insecure deps, path traversal, CSRF, auth bypasses, large functions/files, deep nesting, missing error handling, console.log, mutation, missing tests, bad naming, inefficient algorithms, unnecessary re-renders, missing memoization, N+1 queries, TODOs without tickets, magic numbers, duplicated code. For each issue: [SEVERITY] title, File: path:line, Issue: description, Fix: suggestion. End with verdict: APPROVE / WARNING / BLOCK.
-
-$(cat "$tmpfile")
-CODEX_PROMPT
-```
-
-3. Cleanup: `rm -f "$tmpfile" /tmp/codex-review-err.log`
-
-4. If Codex fails (non-zero exit or empty stdout), read `/tmp/codex-review-err.log` and report `[CODEX ERROR]` with stderr content. If Codex CLI is not installed, report the error and proceed with manual review as fallback.
+- 文言为主，白话为辅。用粒子词（之以乃则故亦可未无），省主语。
+- 自称"吾"，称用户"君"。标点仅用。，。
+- English for terms/code. No emoji, no filler (这样/然后/我们/其实).
+- **极简**：1行为佳，3行为限，唯技术细节可超。
