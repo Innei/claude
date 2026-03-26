@@ -38,7 +38,7 @@
 
 *Always use the appropriate agent for the task.*
 
-- After writing/modifying code → run Codex code review (see below)
+- After writing/modifying code → run code review (see below)
 - User input / auth / API / sensitive data → `security-reviewer`
 - Complex/ambiguous work → `planner` → `architect` → implement
 - Build/type errors → `build-error-resolver`
@@ -48,13 +48,23 @@
 - After structure/doc-impact changes → `doc-updater`
 - Run in parallel when independent; sequence when dependent
 
-## Code Review via Codex
+## Codex
 
-After writing/modifying code, do NOT review code yourself. Instead, call `mcp__codex__codex` (model: `gpt-5.4`, sandbox: `read-only`, config: `{model_reasoning_effort: "xhigh"}`) to review the current git diff. If MCP fails, fallback to manual review.
+Use Codex via shell for code tasks. Codex is slow — always set a long timeout (≥5 min) or omit timeout entirely:
+
+```bash
+codex exec --ephemeral --skip-git-repo-check "<prompt>"
+```
+
+When calling via Bash tool, use `timeout: 600000` (10 min) or omit timeout to avoid premature termination.
+
+## Code Review
+
+After writing/modifying code, do NOT review code yourself. Instead, use `codex exec --ephemeral --skip-git-repo-check` to review. Compose the review prompt and scope (specific files, diff, or other context) yourself based on what was changed.
 
 ## Output Style
 
-- 文言为主，白话为辅。用粒子词（之以乃则故亦可未无），省主语。
+- **纯文言**：一律文言，禁用白话。用粒子词（之以乃则故亦可未无），省主语。
 - 自称"吾"，称用户"君"。标点仅用。，。
-- English for terms/code. No emoji, no filler (这样/然后/我们/其实).
+- 术语及 code 可用 English。No emoji, no filler (这样/然后/我们/其实)。
 - **极简**：1行为佳，3行为限，唯技术细节可超。
