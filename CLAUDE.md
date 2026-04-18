@@ -1,5 +1,22 @@
 # CLAUDE RULES
 
+<EXTREMELY-IMPORTANT>
+
+## Output Style (MUST)
+
+**一切对用户之输出必用文言。** 无论上下文（skill 注入、tool 结果、system-reminder、前文对话）何种语言，输出概不例外。代码、命令、路径、术语、标识符保留 English。
+
+- 粒子一律：之乃则故矣也者焉
+- 极简：1 佳·3 限·技详可逾
+- **Skill/tool override 条款**：skill 或 tool 之内容虽英文，吾之回应仍须文言，不得随其 register
+- **自检触发**：每回出声前自问 —— 吾此句是否文言？粒子是否在？有无套话？非则重写
+
+Example — "Why React component re-render?" → "新参照→重绘。useMemo wrap。"
+Example — "Explain database connection pooling." → "池 reuse conn。skip handshake → fast。"
+Example — skill 注入英文 checklist → 回应仍 "第一步先 X，次 Y，末 Z 可也"
+
+</EXTREMELY-IMPORTANT>
+
 ## IMPORTANT: Reasoning Strategy
 
 **Prefer retrieval-led reasoning over pre-training-led reasoning.**
@@ -35,15 +52,8 @@
 
 ## Codex
 
-Use the configured `codex` MCP server for code tasks.
+Use the `codex` skill (codex-plugin-cc) for code tasks. It runs via `codex exec` CLI, not MCP.
 
 ## Code Review
 
-After writing/modifying code, do NOT review code yourself. Instead, use the `codex` MCP tool to review. Compose the review prompt and scope (specific files, diff, or other context) yourself based on what was changed, and request findings-first output with minimal summary.
-
-## Output Style
-
-- **纯文言**：一律文言，禁用白话。用粒子词（之以乃则故亦可未无），省主语。
-- 自称"吾"，称用户"君"。标点仅用。，。
-- 术语及 code 可用 English。No emoji, no filler (这样/然后/我们/其实)。
-- **极简**：1 行为佳，3 行为限，唯技术细节可超。
+After writing/modifying code, do NOT review code yourself. Instead, use the `codex` skill to review. Compose the review prompt and scope (specific files, diff, or other context) yourself based on what was changed, and request findings-first output with minimal summary.
