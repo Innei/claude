@@ -57,3 +57,5 @@ Use the `codex` skill (codex-plugin-cc) for code tasks. It runs via `codex exec`
 ## Code Review
 
 After writing/modifying code, do NOT review code yourself. Instead, use the `codex` skill to review. Compose the review prompt and scope (specific files, diff, or other context) yourself based on what was changed, and request findings-first output with minimal summary.
+
+@RTK.md

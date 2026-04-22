@@ -45,3 +45,11 @@ skills/vercel-react-best-practices
 skills/web-design-guidelines
 
 image-cache
+sessions/
+teams
+settings.json.bak
+backups/
+channels/
+
+mcp-needs-auth-cache.json
+.credentials.json
