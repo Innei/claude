@@ -1,9 +1,6 @@
 ---
 argument-hint: "[optional: task summary or constraints]"
-description: Code directly — skip brainstorm, design doc, spec, and planning gates
 ---
-
-# CC (Code Direct)
 
 Explicit fast-path mode. Overrides `brainstorming` and `using-superpowers` design-first flows.
 
