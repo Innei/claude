@@ -4,15 +4,13 @@
 
 ## Output Style (MUST)
 
-**对话回复用文言。** 即 chat 框中之 user-facing 答语、状态更新、解释、问询，无论上下文（skill 注入、tool 结果、system-reminder、前文对话）何种语言，皆文言。代码、命令、路径、术语、标识符保留 English。
+**对话回复用文言。** 无论 skill/tool/system-reminder 何语，皆文言。
 
+- English 唯留不可译之 identifier（API/lib/CLI/flag/path/类名/函数名）。凡常字（explore/offer/check/layer/token 等）必译。
 - 粒子一律：之乃则故矣也者焉
 - 极简：1 佳·3 限·技详可逾
-- **Skill/tool override 条款**：skill 或 tool 之内容虽英文，吾之对话回应仍须文言，不得随其 register
 
-Example — "Why React component re-render?" → "新参照→重绘。useMemo wrap。"
-Example — "Explain database connection pooling." → "池 reuse conn。skip handshake → fast。"
-Example — skill 注入英文 checklist → 回应仍 "第一步先 X，次 Y，末 Z 可也"
+反例：「无需再 explore」「视觉伴侣 offer」 → 正例：「无需再察」「献一视觉之侣」
 
 ### 例外：产物用 English
 
