@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "plugins": {
+    "context7@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/context7/2f348ec29763",
+        "version": "2f348ec29763",
+        "installedAt": "2025-12-21T05:44:30.394Z",
+        "lastUpdated": "2026-06-08T14:39:06.293Z",
+        "gitCommitSha": "2f348ec297635eb8e1c4c3a821e6646d39baa2a1"
+      }
+    ],
+    "linear@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/2f348ec29763",
+        "version": "2f348ec29763",
+        "installedAt": "2026-01-05T09:12:17.451Z",
+        "lastUpdated": "2026-06-08T14:39:06.292Z",
+        "gitCommitSha": "2f348ec297635eb8e1c4c3a821e6646d39baa2a1"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-12T07:14:14.358Z",
+        "lastUpdated": "2026-01-12T07:14:14.358Z"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0",
+        "version": "5.1.0",
+        "installedAt": "2026-03-23T06:59:07.398Z",
+        "lastUpdated": "2026-05-05T09:05:01.055Z",
+        "gitCommitSha": "8ea39819eed74fe2a0338e71789f06b30e953041"
+      }
+    ],
+    "vercel@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/vercel/0.43.0",
+        "version": "0.43.0",
+        "installedAt": "2026-05-18T16:12:22.194Z",
+        "lastUpdated": "2026-05-19T06:05:56.682Z",
+        "gitCommitSha": "61f1903bed7b322c9745f6ba67095bc006de7e63"
+      }
+    ],
+    "longbridge@longbridge-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/innei/git/trade",
+        "installPath": "/Users/innei/.claude/plugins/cache/longbridge-skills/longbridge/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-05-27T13:18:01.957Z",
+        "lastUpdated": "2026-05-27T13:18:01.957Z",
+        "gitCommitSha": "ae37197caba3acd6f21ff6219d03cc8d9606e6fc"
+      }
+    ],
+    "claude-dashboard@claude-dashboard": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-dashboard/claude-dashboard/1.29.0",
+        "version": "1.29.0",
+        "installedAt": "2026-06-10T18:56:10.045Z",
+        "lastUpdated": "2026-06-10T18:56:10.045Z",
+        "gitCommitSha": "16a0ad589d8083e6d977e90b12ea52e8375201cd"
+      }
+    ]
+  }
+}

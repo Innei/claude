@@ -25,7 +25,9 @@ transcripts/
 ide/
 
 # Plugins (contains install cache and local state)
-plugins/
+plugins/*
+!plugins/installed_plugins.json
+!plugins/known_marketplaces.json
 
 # Chrome native host (local binary)
 chrome/

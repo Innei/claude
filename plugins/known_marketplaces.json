@@ -1,0 +1,98 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-06-10T18:52:33.720Z"
+  },
+  "claude-code-workflows": {
+    "source": {
+      "source": "github",
+      "repo": "wshobson/agents"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-code-workflows",
+    "lastUpdated": "2025-12-26T04:37:11.998Z"
+  },
+  "anthropic-agent-skills": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/skills"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/anthropic-agent-skills",
+    "lastUpdated": "2026-06-10T18:32:58.265Z"
+  },
+  "claude-code-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-code"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-code-plugins",
+    "lastUpdated": "2026-06-10T18:52:33.522Z"
+  },
+  "context-engineering-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/context-engineering-marketplace",
+    "lastUpdated": "2025-12-30T07:42:42.101Z"
+  },
+  "claude-hud": {
+    "source": {
+      "source": "github",
+      "repo": "jarrodwatts/claude-hud"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-hud",
+    "lastUpdated": "2026-04-09T10:06:29.327Z"
+  },
+  "superpowers-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "obra/superpowers-marketplace"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/superpowers-marketplace",
+    "lastUpdated": "2026-02-12T05:13:39.435Z"
+  },
+  "impeccable": {
+    "source": {
+      "source": "github",
+      "repo": "pbakaus/impeccable"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/impeccable",
+    "lastUpdated": "2026-03-11T16:23:39.521Z"
+  },
+  "openai-codex": {
+    "source": {
+      "source": "github",
+      "repo": "openai/codex-plugin-cc"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/openai-codex",
+    "lastUpdated": "2026-04-17T07:49:18.612Z"
+  },
+  "linear-cli": {
+    "source": {
+      "source": "github",
+      "repo": "schpet/linear-cli"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/linear-cli",
+    "lastUpdated": "2026-04-07T07:55:55.623Z"
+  },
+  "longbridge-skills": {
+    "source": {
+      "source": "github",
+      "repo": "longbridge/skills"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/longbridge-skills",
+    "lastUpdated": "2026-05-27T13:17:53.592Z"
+  },
+  "claude-dashboard": {
+    "source": {
+      "source": "github",
+      "repo": "uppinote20/claude-dashboard"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-dashboard",
+    "lastUpdated": "2026-06-10T18:56:06.000Z"
+  }
+}
