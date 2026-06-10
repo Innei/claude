@@ -3,7 +3,7 @@
   "plan": "max",
   "displayMode": "custom",
   "lines": [
-    ["model", "context", "cost", "rateLimit5h", "rateLimit7d", "rateLimit7dSonnet", "zaiUsage", "projectInfo"]
+    ["model", "contextPercentage", "contextUsage", "cost", "rateLimit5h", "rateLimit7d", "zaiUsage", "projectInfo"]
   ],
   "theme": "default",
   "cache": {
