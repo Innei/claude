@@ -53,3 +53,9 @@ channels/
 
 mcp-needs-auth-cache.json
 .credentials.json
+# Runtime state
+.last-cleanup
+.last-update-result.json
+gh-pr-status-cache.json
+daemon/
+jobs/

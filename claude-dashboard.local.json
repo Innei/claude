@@ -1,0 +1,12 @@
+{
+  "language": "auto",
+  "plan": "max",
+  "displayMode": "custom",
+  "lines": [
+    ["model", "context", "cost", "rateLimit5h", "rateLimit7d", "rateLimit7dSonnet", "zaiUsage", "projectInfo"]
+  ],
+  "theme": "default",
+  "cache": {
+    "ttlSeconds": 300
+  }
+}

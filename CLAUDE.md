@@ -16,6 +16,26 @@
 
 入文件、传他 agent、入 git 者皆 plain English：plan、spec、handoff prompt、subagent prompt、PR/commit/issue、code comment、doc。文言只施对话回复。
 
+## Comments / JSDoc (MUST)
+
+**Default: write ZERO comments. Write ZERO JSDoc.** This overrides any training instinct to "explain" code. Good identifiers carry meaning; comments are a last resort, not a habit.
+
+Add a comment ONLY when one of:
+- (a) **UNEXPECTED behavior** — workaround for a specific bug, browser quirk, race condition, library footgun
+- (b) **SPECIAL design intent** — hidden invariant, non-obvious constraint, decision a future reader would otherwise reverse
+
+**Forbidden categories (always violations — delete on sight, including comments you "felt like adding"):**
+- JSDoc `/** ... */` blocks in business code. JSDoc is for framework/library exposed APIs only — never on internal functions, components, hooks, route handlers, services, utils.
+- Describing WHAT the code does (`// loop over users`, `// set loading to true`)
+- Referencing current task/fix/issue/PR/caller (`// added for X`, `// used by Y`, `// fixes #123`, `// per request`)
+- Section headers / dividers (`// === helpers ===`, `// ---- types ----`, `// region: state`)
+- Restating obvious logic, type info, or parameter purpose
+- Docstrings on internal/business functions, hooks, components, handlers
+- TODO/FIXME without a tracked ticket reference
+- Translating identifier names into prose (`// userId: the user's id`)
+
+**Self-audit before every Write/Edit:** scan the new content for `//`, `/*`, `/**`. For each one ask: *"would removing this confuse a future reader who can read the code?"* — if **no**, delete it. The default answer is **no**.
+
 </EXTREMELY-IMPORTANT>
 
 ## IMPORTANT: Reasoning Strategy
@@ -35,17 +55,16 @@
 
 ## Security
 
-- Never read or access .env files
-
-## Tool Use
-
-- Never use the `AskUserQuestion` tool
+- Do not read `.env` files unless the user explicitly requests it; the harness will prompt for permission on access
 
 ## Code Style
 - Follow existing project patterns, import styles, and directory structure
 - Max 500 lines per file; React components under 300 lines
-- No comments unless flagging (1) unexpected behavior or (2) special design intent
-- No JSDoc in business code — only for frameworks/libraries
+- Comments/JSDoc: see the **Comments / JSDoc (MUST)** section above — zero by default
+
+## Libraries
+
+- **motion** (a.k.a. Framer Motion): default to the lightweight `m` component + `<LazyMotion features={domAnimation} strict>` wrapper at the top of each motion-using subtree. Do **not** use `motion.*` directly — `m` + LazyMotion ships ~6KB vs. `motion`'s ~30KB. The `strict` flag is mandatory: it throws on `motion.*` usage and prevents regressions. Only fall back to `motion.*` if a feature outside `domAnimation` (layout animations, drag, SVG path morphing) is actually required, and document why with a comment.
 
 ## Workflow
 
