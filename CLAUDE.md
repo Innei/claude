@@ -62,10 +62,6 @@ Add a comment ONLY when one of:
 - Max 500 lines per file; React components under 300 lines
 - Comments/JSDoc: see the **Comments / JSDoc (MUST)** section above — zero by default
 
-## Libraries
-
-- **motion** (a.k.a. Framer Motion): default to the lightweight `m` component + `<LazyMotion features={domAnimation} strict>` wrapper at the top of each motion-using subtree. Do **not** use `motion.*` directly — `m` + LazyMotion ships ~6KB vs. `motion`'s ~30KB. The `strict` flag is mandatory: it throws on `motion.*` usage and prevents regressions. Only fall back to `motion.*` if a feature outside `domAnimation` (layout animations, drag, SVG path morphing) is actually required, and document why with a comment.
-
 ## Workflow
 
 - Before starting, understand the task scope and identify affected modules
