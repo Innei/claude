@@ -1,0 +1,81 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": [
+      "AskUserQuestion"
+    ],
+    "ask": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(.env)",
+      "Read(.env.*)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/innei/.claude/statusline-dashboard.sh"
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "linear@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "vercel@claude-plugins-official": true,
+    "claude-dashboard@claude-dashboard": true,
+    "claude-code-wakatime@wakatime": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    },
+    "linear-cli": {
+      "source": {
+        "source": "github",
+        "repo": "schpet/linear-cli"
+      }
+    },
+    "longbridge-skills": {
+      "source": {
+        "source": "github",
+        "repo": "longbridge/skills"
+      }
+    },
+    "claude-dashboard": {
+      "source": {
+        "source": "github",
+        "repo": "uppinote20/claude-dashboard"
+      }
+    },
+    "wakatime": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/wakatime/claude-code-wakatime.git"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "xhigh",
+  "awaySummaryEnabled": false,
+  "tui": "default",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "auto",
+  "agentPushNotifEnabled": true
+}

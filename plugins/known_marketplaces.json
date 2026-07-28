@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-06-10T18:52:33.720Z"
+    "lastUpdated": "2026-07-28T13:30:16.013Z"
   },
   "claude-code-workflows": {
     "source": {
@@ -21,7 +21,7 @@
       "repo": "anthropics/skills"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/anthropic-agent-skills",
-    "lastUpdated": "2026-06-10T18:32:58.265Z"
+    "lastUpdated": "2026-07-28T11:37:48.306Z"
   },
   "claude-code-plugins": {
     "source": {
@@ -29,7 +29,7 @@
       "repo": "anthropics/claude-code"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-code-plugins",
-    "lastUpdated": "2026-06-10T18:52:33.522Z"
+    "lastUpdated": "2026-07-28T13:30:15.834Z"
   },
   "context-engineering-marketplace": {
     "source": {
@@ -85,7 +85,7 @@
       "repo": "longbridge/skills"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/longbridge-skills",
-    "lastUpdated": "2026-05-27T13:17:53.592Z"
+    "lastUpdated": "2026-07-28T12:45:42.290Z"
   },
   "claude-dashboard": {
     "source": {
@@ -93,6 +93,14 @@
       "repo": "uppinote20/claude-dashboard"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-dashboard",
-    "lastUpdated": "2026-06-10T18:56:06.000Z"
+    "lastUpdated": "2026-07-28T13:23:32.456Z"
+  },
+  "wakatime": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/wakatime/claude-code-wakatime.git"
+    },
+    "installLocation": "/Users/innei/.claude/plugins/marketplaces/wakatime",
+    "lastUpdated": "2026-06-19T09:20:38.660Z"
   }
 }

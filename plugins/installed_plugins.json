@@ -4,21 +4,21 @@
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/context7/2f348ec29763",
-        "version": "2f348ec29763",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/context7/ae33ba90afc8",
+        "version": "ae33ba90afc8",
         "installedAt": "2025-12-21T05:44:30.394Z",
-        "lastUpdated": "2026-06-08T14:39:06.293Z",
-        "gitCommitSha": "2f348ec297635eb8e1c4c3a821e6646d39baa2a1"
+        "lastUpdated": "2026-06-19T14:20:54.757Z",
+        "gitCommitSha": "ae33ba90afc8472d257016a19340ab2bb2b431d8"
       }
     ],
     "linear@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/2f348ec29763",
-        "version": "2f348ec29763",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/ae33ba90afc8",
+        "version": "ae33ba90afc8",
         "installedAt": "2026-01-05T09:12:17.451Z",
-        "lastUpdated": "2026-06-08T14:39:06.292Z",
-        "gitCommitSha": "2f348ec297635eb8e1c4c3a821e6646d39baa2a1"
+        "lastUpdated": "2026-06-19T14:20:54.757Z",
+        "gitCommitSha": "ae33ba90afc8472d257016a19340ab2bb2b431d8"
       }
     ],
     "code-simplifier@claude-plugins-official": [
@@ -33,20 +33,20 @@
     "superpowers@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0",
-        "version": "5.1.0",
-        "installedAt": "2026-03-23T06:59:07.398Z",
-        "lastUpdated": "2026-05-05T09:05:01.055Z",
-        "gitCommitSha": "8ea39819eed74fe2a0338e71789f06b30e953041"
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0",
+        "version": "6.2.0",
+        "installedAt": "2026-07-28T13:22:57.592Z",
+        "lastUpdated": "2026-07-28T13:22:57.592Z",
+        "gitCommitSha": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
       }
     ],
     "vercel@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/vercel/0.43.0",
-        "version": "0.43.0",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/vercel/0.45.1",
+        "version": "0.45.1",
         "installedAt": "2026-05-18T16:12:22.194Z",
-        "lastUpdated": "2026-05-19T06:05:56.682Z",
+        "lastUpdated": "2026-07-24T06:31:27.228Z",
         "gitCommitSha": "61f1903bed7b322c9745f6ba67095bc006de7e63"
       }
     ],
@@ -54,21 +54,31 @@
       {
         "scope": "project",
         "projectPath": "/Users/innei/git/trade",
-        "installPath": "/Users/innei/.claude/plugins/cache/longbridge-skills/longbridge/1.0.0",
-        "version": "1.0.0",
+        "installPath": "/Users/innei/.claude/plugins/cache/longbridge-skills/longbridge/2.0.0",
+        "version": "2.0.0",
         "installedAt": "2026-05-27T13:18:01.957Z",
-        "lastUpdated": "2026-05-27T13:18:01.957Z",
-        "gitCommitSha": "ae37197caba3acd6f21ff6219d03cc8d9606e6fc"
+        "lastUpdated": "2026-07-28T12:45:42.327Z",
+        "gitCommitSha": "84bff7bea32e7366b959abf6be4c7fede3764fb2"
       }
     ],
     "claude-dashboard@claude-dashboard": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-dashboard/claude-dashboard/1.29.0",
-        "version": "1.29.0",
-        "installedAt": "2026-06-10T18:56:10.045Z",
-        "lastUpdated": "2026-06-10T18:56:10.045Z",
-        "gitCommitSha": "16a0ad589d8083e6d977e90b12ea52e8375201cd"
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-dashboard/claude-dashboard/1.30.1",
+        "version": "1.30.1",
+        "installedAt": "2026-07-28T12:46:55.859Z",
+        "lastUpdated": "2026-07-28T13:23:34.872Z",
+        "gitCommitSha": "fb4e06ead71c8b80b0b797842d7de46427d5f146"
+      }
+    ],
+    "claude-code-wakatime@wakatime": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/wakatime/claude-code-wakatime/4.1.0",
+        "version": "4.1.0",
+        "installedAt": "2026-06-19T09:20:40.276Z",
+        "lastUpdated": "2026-06-19T09:20:40.276Z",
+        "gitCommitSha": "3915f4ec19d4fedf2a1a2a644f1138cd72e956da"
       }
     ]
   }

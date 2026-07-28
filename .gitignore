@@ -41,15 +41,21 @@ projects/
 # Statsig (feature flag cache)
 statsig/
 
-# Symlinked skills (external repos)
-skills/codex
-skills/vercel-react-best-practices
-skills/web-design-guidelines
+# Skills: symlinks into ~/.agents/skills are managed elsewhere; only real dirs tracked
+skills/*
+!skills/cloudflare-one/
+!skills/cloudflare-one-migrations/
+!skills/durable-objects/
+!skills/sandbox-sdk/
+!skills/turnstile-spin/
+!skills/workers-best-practices/
 
 image-cache
 sessions/
 teams
 settings.json.bak
+settings.json.bak-before-restore
+daemon.lock
 backups/
 channels/
 
