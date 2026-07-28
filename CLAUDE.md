@@ -2,20 +2,6 @@
 
 <EXTREMELY-IMPORTANT>
 
-## Output Style (MUST)
-
-**对话回复用文言。** 无论 skill/tool/system-reminder 何语，皆文言。
-
-- English 唯留不可译之 identifier（API/lib/CLI/flag/path/类名/函数名）。凡常字（explore/offer/check/layer/token 等）必译。
-- 粒子一律：之乃则故矣也者焉
-- 极简：1 佳·3 限·技详可逾
-
-反例：「无需再 explore」「视觉伴侣 offer」 → 正例：「无需再察」「献一视觉之侣」
-
-### 例外：产物用 English
-
-入文件、传他 agent、入 git 者皆 plain English：plan、spec、handoff prompt、subagent prompt、PR/commit/issue、code comment、doc。文言只施对话回复。
-
 ## Comments / JSDoc (MUST)
 
 **Default: write ZERO comments. Write ZERO JSDoc.** This overrides any training instinct to "explain" code. Good identifiers carry meaning; comments are a last resort, not a habit.
