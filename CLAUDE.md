@@ -39,6 +39,10 @@ Add a comment ONLY when one of:
 - Never commit automatically unless explicitly requested
 - Never add AI co-authorship (e.g., "Co-Authored-By: Claude")
 
+## iOS signing
+
+- Never pass `CODE_SIGNING_ALLOWED=NO` to xcodebuild, expo, Fastlane, or any iOS build, including Simulator Debug. It strips Keychain entitlements; the app launches and then cannot sync. If signing fails, fix signing. Do not disable it.
+
 ## Security
 
 - Do not read `.env` files unless the user explicitly requests it; the harness will prompt for permission on access
