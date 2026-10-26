@@ -1,24 +1,14 @@
 {
   "version": 2,
   "plugins": {
-    "context7@claude-plugins-official": [
-      {
-        "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/context7/ae33ba90afc8",
-        "version": "ae33ba90afc8",
-        "installedAt": "2025-12-21T05:44:30.394Z",
-        "lastUpdated": "2026-06-19T14:20:54.757Z",
-        "gitCommitSha": "ae33ba90afc8472d257016a19340ab2bb2b431d8"
-      }
-    ],
     "linear@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/ae33ba90afc8",
-        "version": "ae33ba90afc8",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/58267944f921",
+        "version": "58267944f921",
         "installedAt": "2026-01-05T09:12:17.451Z",
-        "lastUpdated": "2026-06-19T14:20:54.757Z",
-        "gitCommitSha": "ae33ba90afc8472d257016a19340ab2bb2b431d8"
+        "lastUpdated": "2026-10-23T19:14:01.813Z",
+        "gitCommitSha": "58267944f92187b7d6a1c822165c96c81c864806"
       }
     ],
     "code-simplifier@claude-plugins-official": [
@@ -30,24 +20,14 @@
         "lastUpdated": "2026-01-12T07:14:14.358Z"
       }
     ],
-    "superpowers@claude-plugins-official": [
-      {
-        "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0",
-        "version": "6.2.0",
-        "installedAt": "2026-07-28T13:22:57.592Z",
-        "lastUpdated": "2026-07-28T13:22:57.592Z",
-        "gitCommitSha": "3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9"
-      }
-    ],
     "vercel@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/vercel/0.45.1",
-        "version": "0.45.1",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/vercel/0.50.0",
+        "version": "0.50.0",
         "installedAt": "2026-05-18T16:12:22.194Z",
-        "lastUpdated": "2026-07-24T06:31:27.228Z",
-        "gitCommitSha": "61f1903bed7b322c9745f6ba67095bc006de7e63"
+        "lastUpdated": "2026-09-22T17:32:07.163Z",
+        "gitCommitSha": "882e66c2698689324c341b7bb8fd8beb92c27bf6"
       }
     ],
     "longbridge@longbridge-skills": [
@@ -79,6 +59,46 @@
         "installedAt": "2026-06-19T09:20:40.276Z",
         "lastUpdated": "2026-06-19T09:20:40.276Z",
         "gitCommitSha": "3915f4ec19d4fedf2a1a2a644f1138cd72e956da"
+      }
+    ],
+    "expo@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/expo/1.13.9",
+        "version": "1.13.9",
+        "installedAt": "2026-07-29T18:47:04.797Z",
+        "lastUpdated": "2026-10-16T06:57:55.943Z",
+        "gitCommitSha": "d4f484024fec15196bfd3c272e953e3f983972cf"
+      }
+    ],
+    "i-have-adhd@i-have-adhd": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/i-have-adhd/i-have-adhd/0.2.0",
+        "version": "0.2.0",
+        "installedAt": "2026-08-20T07:15:12.407Z",
+        "lastUpdated": "2026-08-20T07:15:12.407Z",
+        "gitCommitSha": "e7555fcaf612dfa1739dc86610ea926a906db614"
+      }
+    ],
+    "ponytail@ponytail": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/ponytail/ponytail/4.9.0",
+        "version": "4.9.0",
+        "installedAt": "2026-08-21T11:07:55.347Z",
+        "lastUpdated": "2026-08-21T11:07:55.347Z",
+        "gitCommitSha": "2ed6c52c9d7e5e56942508591085fd45dea277d3"
+      }
+    ],
+    "prismantis@prismantis": [
+      {
+        "scope": "user",
+        "installPath": "/Users/innei/.claude/plugins/cache/prismantis/prismantis/0.14.0",
+        "version": "0.14.0",
+        "installedAt": "2026-10-10T07:11:45.928Z",
+        "lastUpdated": "2026-10-10T07:11:45.928Z",
+        "gitCommitSha": "484f01400ff20c77a3c55a13c65cc4124387d616"
       }
     ]
   }

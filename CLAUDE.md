@@ -62,7 +62,3 @@ Add a comment ONLY when one of:
 - Ask when uncertain, don't assume
 
 @RTK.md
-
-## Superpowers
-
-- `brainstorming`: after spec is approved, **skip `writing-plans`** unless user explicitly asks for a plan. Then ask which execution mode: (1) Subagent-Driven (recommended, `subagent-driven-development`) (2) Inline (`executing-plans`) (3) Just code it. Wait for choice before touching code.
