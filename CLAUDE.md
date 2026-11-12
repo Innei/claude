@@ -34,31 +34,13 @@ Add a comment ONLY when one of:
 - If a relevant skill exists for the task, USE IT rather than attempting to solve from memory
 - When in doubt, retrieve; don't hallucinate
 
-## Git
-
-- Never commit automatically unless explicitly requested
-- Never add AI co-authorship (e.g., "Co-Authored-By: Claude")
-
 ## iOS signing
 
 - Never pass `CODE_SIGNING_ALLOWED=NO` to xcodebuild, expo, Fastlane, or any iOS build, including Simulator Debug. It strips Keychain entitlements; the app launches and then cannot sync. If signing fails, fix signing. Do not disable it.
-
-## Security
-
-- Do not read `.env` files unless the user explicitly requests it; the harness will prompt for permission on access
 
 ## Code Style
 - Follow existing project patterns, import styles, and directory structure
 - Max 500 lines per file; React components under 300 lines
 - Comments/JSDoc: see the **Comments / JSDoc (MUST)** section above — zero by default
-
-## Workflow
-
-- Before starting, understand the task scope and identify affected modules
-- For renames or bulk changes, search globally to confirm impact scope first
-- Use `ast-grep` (sg) for code search and refactoring when possible
-- Run lint (includes typecheck) after writing code, but don't build
-- **Only lint/typecheck/format the files you modified** — never run these tools on the entire project. Scope checks to changed files only
-- Ask when uncertain, don't assume
 
 @RTK.md
