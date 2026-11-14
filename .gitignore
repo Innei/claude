@@ -4,9 +4,8 @@ history.jsonl
 stats-cache.json
 *.log
 
-# Local settings
+# Local settings (.claude/ nested dirs; settings.json is tracked)
 .claude/
-settings.json
 
 # Session & runtime data
 session-env/

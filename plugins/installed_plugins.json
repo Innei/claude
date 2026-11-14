@@ -4,11 +4,11 @@
     "linear@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/58267944f921",
-        "version": "58267944f921",
+        "installPath": "/Users/innei/.claude/plugins/cache/claude-plugins-official/linear/b5b01ac4f889",
+        "version": "b5b01ac4f889",
         "installedAt": "2026-01-05T09:12:17.451Z",
-        "lastUpdated": "2026-10-23T19:14:01.813Z",
-        "gitCommitSha": "58267944f92187b7d6a1c822165c96c81c864806"
+        "lastUpdated": "2026-11-14T07:35:54.509Z",
+        "gitCommitSha": "b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6"
       }
     ],
     "code-simplifier@claude-plugins-official": [
@@ -79,16 +79,6 @@
         "installedAt": "2026-08-20T07:15:12.407Z",
         "lastUpdated": "2026-08-20T07:15:12.407Z",
         "gitCommitSha": "e7555fcaf612dfa1739dc86610ea926a906db614"
-      }
-    ],
-    "ponytail@ponytail": [
-      {
-        "scope": "user",
-        "installPath": "/Users/innei/.claude/plugins/cache/ponytail/ponytail/4.9.0",
-        "version": "4.9.0",
-        "installedAt": "2026-08-21T11:07:55.347Z",
-        "lastUpdated": "2026-08-21T11:07:55.347Z",
-        "gitCommitSha": "2ed6c52c9d7e5e56942508591085fd45dea277d3"
       }
     ],
     "prismantis@prismantis": [

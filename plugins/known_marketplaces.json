@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-10-26T13:16:40.201Z"
+    "lastUpdated": "2026-11-14T07:57:15.516Z"
   },
   "claude-code-workflows": {
     "source": {
@@ -21,7 +21,7 @@
       "repo": "anthropics/skills"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/anthropic-agent-skills",
-    "lastUpdated": "2026-10-26T13:16:44.269Z"
+    "lastUpdated": "2026-11-14T07:57:21.903Z"
   },
   "claude-code-plugins": {
     "source": {
@@ -29,7 +29,7 @@
       "repo": "anthropics/claude-code"
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/claude-code-plugins",
-    "lastUpdated": "2026-10-26T13:16:44.268Z"
+    "lastUpdated": "2026-11-14T07:57:21.990Z"
   },
   "context-engineering-marketplace": {
     "source": {
@@ -110,14 +110,6 @@
     },
     "installLocation": "/Users/innei/.claude/plugins/marketplaces/i-have-adhd",
     "lastUpdated": "2026-08-20T07:15:09.902Z"
-  },
-  "ponytail": {
-    "source": {
-      "source": "github",
-      "repo": "DietrichGebert/ponytail"
-    },
-    "installLocation": "/Users/innei/.claude/plugins/marketplaces/ponytail",
-    "lastUpdated": "2026-08-21T11:07:46.059Z"
   },
   "prismantis": {
     "source": {

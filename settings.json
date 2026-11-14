@@ -1,0 +1,160 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_CODE_MODE": "1"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": [
+      "Bash(pkill -9 -f *)",
+      "Bash(pkill -KILL -f *)",
+      "Bash(pkill -f *)"
+    ],
+    "ask": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(.env)",
+      "Read(.env.*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "fable",
+  "disableClaudeAiConnectors": true,
+  "skillOverrides": {
+    "anthropic-skills:docx": "off",
+    "anthropic-skills:pptx": "off",
+    "anthropic-skills:xlsx": "off",
+    "anthropic-skills:google-workspace": "off"
+  },
+  "disableBundledSkills": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/innei/.claude/statusline-dashboard.sh"
+  },
+  "enabledPlugins": {
+    "claude-dashboard@claude-dashboard": true,
+    "expo@claude-plugins-official": false,
+    "i-have-adhd@i-have-adhd": true,
+    "prismantis@prismantis": false,
+    "cowork-plugin-management@synced": false
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    },
+    "linear-cli": {
+      "source": {
+        "source": "github",
+        "repo": "schpet/linear-cli"
+      }
+    },
+    "longbridge-skills": {
+      "source": {
+        "source": "github",
+        "repo": "longbridge/skills"
+      }
+    },
+    "claude-dashboard": {
+      "source": {
+        "source": "github",
+        "repo": "uppinote20/claude-dashboard"
+      }
+    },
+    "wakatime": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/wakatime/claude-code-wakatime.git"
+      }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    },
+    "prismantis": {
+      "source": {
+        "source": "github",
+        "repo": "NahumLitvin/prismantis"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "medium",
+  "modelSettings": {
+    "claude-fable-5-1": {
+      "effortLevel": "high"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "high",
+      "autoCompactWindow": 600000
+    },
+    "claude-fable-5-2": {
+      "autoCompactWindow": 400000
+    }
+  },
+  "awaySummaryEnabled": false,
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "theme": "auto",
+  "agentPushNotifEnabled": true,
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Bash(xcrun:*) in /Users/innei/git/innei-repo/lody-ios — routine iOS toolchain usage (26 occurrences)",
+      "Bash(xcodebuild:*) in /Users/innei/git/innei-repo/lody-ios — routine iOS build usage (18 occurrences)",
+      "Bash(rtk:*) in /Users/innei/git/innei-repo/lody-ios — project-specific CLI used routinely (9 occurrences)"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: PUBLIC — Innei/lody-ios (github.com:Innei/lody-ios.git); any push here is publishing",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: CI secret names referenced (names only, no values): ASC_API_KEY_P8, ASC_ISSUER_ID, ASC_KEY_ID, IOS_DIST_CERT_P12, IOS_DIST_CERT_PASSWORD, OTA_API_KEY, OTA_SERVER, TELEGRAM_BOT_TOKEN",
+      "**Default / protected branches**: main (default); no rulesets and no classic branch protection listed via gh — treat as unprotected unless later found otherwise",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine or CI runner with open internet",
+      "**Source control**: The trusted repo (Innei/lody-ios on github.com) and its remote(s) only (no additional orgs configured)",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material (e.g. .env, .env.*.local per .gitignore, and the CI secret names listed above); preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: iOS/React Native app development (Lody iOS — Expo/React Native/Swift client)",
+      "**Trusted repo**: /Users/innei/git/innei-repo/lody-ios (github.com:Innei/lody-ios.git) — public repo; only this repo's own work should be committed/pushed here, confidential material is not cleared by visibility",
+      "**Org-specific CLIs**: rtk, asc, axe, mxs, wx, bi, pi (seen routinely in this project's transcripts and/or shell history) — routine under this project's working tree",
+      "No 'routine under <user>/ prefix' qualifiers found"
+    ]
+  }
+}
